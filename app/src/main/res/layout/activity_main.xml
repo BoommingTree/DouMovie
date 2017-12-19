@@ -5,7 +5,7 @@
     android:id="@+id/main_draw"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.colin.doumovie.MainActivity">
+    tools:context="com.colin.doumovie.view.imp.MainActivity">
 
 
     <FrameLayout
@@ -13,11 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="我是主页"
-            android:textSize="@dimen/text_size_title" />
+
     </FrameLayout>
     <!--侧滑-->
     <android.support.design.widget.NavigationView
@@ -26,5 +22,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
-        android:scrollbars="none" />
+        android:scrollbars="none"
+        app:headerLayout="@layout/main_nav_head_layout"
+        app:itemTextColor="@color/text_color"
+        app:menu="@menu/main_nav_menu" />
 </android.support.v4.widget.DrawerLayout>

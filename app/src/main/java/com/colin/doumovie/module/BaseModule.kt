@@ -17,4 +17,9 @@ interface BaseModule {
      * @return token
      */
     fun getToken(): String
+
+    /**
+     * 获取豆瓣的api key
+     */
+    fun getApiKey():String
 }

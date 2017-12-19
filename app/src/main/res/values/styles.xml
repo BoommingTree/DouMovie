@@ -10,4 +10,14 @@
         <item name="android:windowBackground">@color/windowBackground</item>
     </style>
 
+
+    <style name="item_hot_screen_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_05</item>
+        <item name="android:layout_marginTop">@dimen/dimen_05</item>
+        <item name="android:textSize">@dimen/text_size_item_tip</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
 </resources>

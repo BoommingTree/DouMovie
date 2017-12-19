@@ -11,6 +11,9 @@ interface BaseView {
      */
     fun initView()
 
+
+    fun initEvent();
+
     /**
      * 显示一个loading
      *

@@ -23,10 +23,14 @@ abstract class BaseActivity : AppCompatActivity(), BaseView {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         base_toolbar.setNavigationOnClickListener { finish() }
         initView()
+        initEvent()
     }
 
-    abstract open fun getContentViewId(): Int
+    abstract  fun getContentViewId(): Int
 
+    override fun initEvent() {
+
+    }
 
     fun setToolBarTitle(title: String) {
         base_toolbar.title = title

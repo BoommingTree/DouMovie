@@ -1,0 +1,14 @@
+package com.colin.doumovie.view
+
+import com.colin.doumovie.bean.HotScreenResult
+
+/**
+ * Created by tianweiping on 2017/12/18.
+ * 热门上映
+ */
+interface HotScreenView : BaseView {
+
+    fun notifyList(data:HotScreenResult)
+
+    fun toMovieDetailAct(position:Int)
+}
